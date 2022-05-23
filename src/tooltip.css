@@ -1,0 +1,83 @@
+.tooltipContainer {
+  position: absolute;
+  width: max-content;
+  font-weight: 500;
+}
+#tooltip {
+  position: relative;
+}
+
+#tooltipText {
+  min-width: 50px;
+  padding: 3px 6px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  color: #000000;
+  position: relative;
+  z-index: 100;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis !important;
+}
+#toolArrow {
+  content: " ";
+  aspect-ratio: 1/1;
+  height: 16px;
+  background-color: #ffffff;
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.tooltipLeftContainer,
+.tooltipRightContainer {
+  position: relative;
+}
+#tooltip-container-top {
+  margin: 0 auto;
+  display: none;
+  top: -60%;
+  left: 0;
+  right: 0;
+  max-width: 300px;
+}
+#tooltip-container-bottom {
+  margin: 0 auto;
+  display: none;
+  bottom: -60%;
+  left: 0;
+  right: 0;
+  max-width: 300px;
+}
+
+#tooltip-container-left {
+  right: 104%;
+  top: 20%;
+  transform-origin: 0 100%;
+  max-width: 200px;
+}
+#tooltip-container-right {
+  left: 104% !important;
+  top: 20%;
+  display: none;
+  max-width: 200px;
+}
+
+.tooltip-top {
+  top: 55%;
+  left: 45%;
+}
+.tooltip-bottom {
+  bottom: 55%;
+  left: 45%;
+}
+.tooltip-right {
+  bottom: 25%;
+  left: -6px;
+  height: 12px !important;
+}
+.tooltip-left {
+  bottom: 25%;
+  right: -6px;
+  height: 12px !important;
+}

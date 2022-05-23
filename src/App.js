@@ -1,22 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Tooltip from "./Tooltip";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {/* Calling the Tooltip component and passing values */}
+        <Tooltip text="THIS IS THE HOVER " position="top">
+          <span className="text" id="tooltip-component">
+            React Skill Test 1: Tooltip
+          </span>
+        </Tooltip>
       </header>
     </div>
   );
